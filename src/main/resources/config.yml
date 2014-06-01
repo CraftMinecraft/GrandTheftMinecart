@@ -12,6 +12,13 @@
 
 InformAboutUpdates: true
 WantedLevel:
+  Condition:
+    AttackMob: 0
+    KillMob: 0
+    AttackPlayer: 0
+    KillPlayer: 1
+    AttackPolice: 2
+    KillPolice: 3
   Time:
     # Time in seconds a player have to hide from the police to lose his WantedLevel
     OneStar: 40

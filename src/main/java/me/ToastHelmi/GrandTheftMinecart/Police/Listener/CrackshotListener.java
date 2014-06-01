@@ -10,6 +10,7 @@ import me.ToastHelmi.GrandTheftMinecart.Police.CrimeManager;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.StaticMetaDataValue;
 import me.ToastHelmi.GrandTheftMinecart.Util.MetaDataManager;
 import org.bukkit.craftbukkit.v1_7_R2.entity.CraftPlayer;
+import org.bukkit.entity.Damageable;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
 import org.bukkit.entity.Zombie;
@@ -26,6 +27,8 @@ public class CrackshotListener implements Listener {
 
     @EventHandler
     public void hurtEntity(WeaponDamageEntityEvent e) {
-        CrimeListener.hurtEntity(e.getPlayer(), e.getVictim(), e.getDamage());
+        if (e.getVictim() instanceof Damageable) {
+            CrimeListener.hurtEntity(e.getPlayer(), (Damageable)e.getVictim(), e.getDamage());
+        }
     }
 }

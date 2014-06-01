@@ -1,7 +1,13 @@
 package me.ToastHelmi.GrandTheftMinecart.StaticValues;
 
 public class SettingPath {
-
+        public final static String CONDITION_ATTACK_MOB = "WantedLevel.Condition.AttackMob";
+        public final static String CONDITION_KILL_MOB = "WantedLevel.Condition.KillMob";
+        public final static String CONDITION_ATTACK_PLAYER = "WantedLevel.Condition.AttackPlayer";
+        public final static String CONDITION_KILL_PLAYER = "WantedLevel.Condition.KillPlayer";
+        public final static String CONDITION_ATTACK_POLICE = "WantedLevel.Condition.AttackPolice";
+        public final static String CONDITION_KILL_POLICE = "WantedLevel.Condition.AttackPolice";
+    
 	public final static String TIME_ONE_STAR = "WantedLevel.Time.OneStar";
 	public final static String TIME_TWO_STAR = "WantedLevel.Time.TwoStars";
 	public final static String TIME_THREE_STAR = "WantedLevel.Time.ThreeStarts";
