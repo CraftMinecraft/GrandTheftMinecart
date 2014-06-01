@@ -39,7 +39,7 @@ public class Sniper extends EntitySkeleton{
 			cField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
 			cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
                         
-                        this.setCustomName("Sniper");
+                        this.setCustomName(Settings.getSniperName());
                         this.setCustomNameVisible(Settings.isMobNameVisible());
 			if (world != null && !world.isStatic) {
 	            this.setEquipment(0,  new ItemStack(Items.BOW));

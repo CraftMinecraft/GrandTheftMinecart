@@ -39,7 +39,7 @@ public class PoliceOfficer extends EntityZombie{
 			cField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
 			cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
 			
-			this.setCustomName("Police Officer");
+			this.setCustomName(Settings.getOfficerName());
 			this.setCustomNameVisible(Settings.isMobNameVisible());
 		} catch (Exception exc) {
 			exc.printStackTrace();
