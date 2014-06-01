@@ -45,7 +45,7 @@ WantedLevel:
 MobNameVisible: false
 Police:
   Officer:
-    name: Police Officer
+    Name: Police Officer
     Equipment:
       Helmet: AIR
       Chestplate: LEATHER_CHESTPLATE
@@ -53,14 +53,14 @@ Police:
       Boots: AIR
       Weapon: AIR
   Sniper:
-    name: Sniper
+    Name: Sniper
     Equipment:
       Helmet: AIR
       Chestplate: LEATHER_CHESTPLATE
       Leggings: AIR
       Boots: AIR
   Swat:
-    name: SWAT
+    Name: SWAT
     Equipment:
       Helmet: IRON_HELMET
       Chestplate: LEATHER_CHESTPLATE
