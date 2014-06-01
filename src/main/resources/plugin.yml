@@ -3,6 +3,7 @@ main: me.ToastHelmi.GrandTheftMinecart.GrandTheftMinecart
 version: ${version}
 author: ToastHelmi
 description: add GTA-Features to Minecraft
+softdepend: [CrackShot]
 commands:
   GTM:
     description: The base GrandTheftMinecart command.
