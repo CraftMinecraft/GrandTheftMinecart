@@ -1,5 +1,6 @@
 package me.ToastHelmi.GrandTheftMinecart.Police.Listener;
 
+import com.shampaggon.crackshot.events.WeaponDamageEntityEvent;
 import me.ToastHelmi.GrandTheftMinecart.Police.CrimeManager;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.StaticMetaDataValue;
 import me.ToastHelmi.GrandTheftMinecart.Util.MetaDataManager;
@@ -11,7 +12,9 @@ import org.bukkit.entity.Skeleton;
 import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByBlockEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.vehicle.VehicleEnterEvent;
 
 public class CrimeListener implements Listener{
@@ -20,7 +23,7 @@ public class CrimeListener implements Listener{
 	
 	public CrimeListener(){
 		m = CrimeManager.getInstance();
-	}
+        }
 	
 	@EventHandler
 	public void hurtEntity(EntityDamageByEntityEvent e){

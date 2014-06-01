@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.UUID;
 
 import me.ToastHelmi.GrandTheftMinecart.GrandTheftMinecart;
+import me.ToastHelmi.GrandTheftMinecart.Police.Listener.CrackshotListener;
 import me.ToastHelmi.GrandTheftMinecart.Police.Listener.CrimeListener;
 import me.ToastHelmi.GrandTheftMinecart.Police.Listener.PlayerLifeListener;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.SettingPath;
@@ -165,7 +166,9 @@ public class CrimeManager {
 	public void registerListener(PluginManager pm){
 		pm.registerEvents(new PlayerLifeListener(), plugin);
 		pm.registerEvents(new CrimeListener(), plugin);
-		
+                if (pm.getPlugin("CrackShot") != null) {
+                    pm.registerEvents(new CrackshotListener(), plugin);
+                }
 	}
 	public boolean isPlayerCriminal(Player p){
 		return cooldowns.containsKey(p.getUniqueId());
