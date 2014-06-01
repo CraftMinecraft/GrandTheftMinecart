@@ -1,10 +1,10 @@
 package me.ToastHelmi.GrandTheftMinecart.NMS.PathFinderGoals;
 
 import me.ToastHelmi.GrandTheftMinecart.Police.CrimeManager;
-import net.minecraft.server.v1_7_R3.Entity;
-import net.minecraft.server.v1_7_R3.EntityLiving;
-import net.minecraft.server.v1_7_R3.EntityPlayer;
-import net.minecraft.server.v1_7_R3.IEntitySelector;
+import net.minecraft.server.v1_7_R2.Entity;
+import net.minecraft.server.v1_7_R2.EntityLiving;
+import net.minecraft.server.v1_7_R2.EntityPlayer;
+import net.minecraft.server.v1_7_R2.IEntitySelector;
 
 import org.bukkit.entity.Player;
 

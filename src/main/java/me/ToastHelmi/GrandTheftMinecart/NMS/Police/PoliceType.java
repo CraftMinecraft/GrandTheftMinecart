@@ -1,6 +1,6 @@
 package me.ToastHelmi.GrandTheftMinecart.NMS.Police;
 
-import net.minecraft.server.v1_7_R3.EntityLiving;
+import net.minecraft.server.v1_7_R2.EntityLiving;
 
 public enum PoliceType {
 	POLICEOFFICER(PoliceOfficer.class),

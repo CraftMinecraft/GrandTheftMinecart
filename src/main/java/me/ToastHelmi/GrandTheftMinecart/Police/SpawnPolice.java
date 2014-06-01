@@ -8,13 +8,13 @@ import java.util.Random;
 import me.ToastHelmi.GrandTheftMinecart.NMS.Police.PoliceType;
 import me.ToastHelmi.GrandTheftMinecart.Settings.Settings;
 import me.ToastHelmi.GrandTheftMinecart.Util.Locations.LocationUtils;
-import net.minecraft.server.v1_7_R3.Entity;
-import net.minecraft.server.v1_7_R3.EntityMonster;
-import net.minecraft.server.v1_7_R3.World;
+import net.minecraft.server.v1_7_R2.Entity;
+import net.minecraft.server.v1_7_R2.EntityMonster;
+import net.minecraft.server.v1_7_R2.World;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_7_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_7_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 

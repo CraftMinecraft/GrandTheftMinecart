@@ -3,11 +3,11 @@ package me.ToastHelmi.GrandTheftMinecart.NMS.PathFinderGoals;
 import java.util.Collections;
 import java.util.List;
 
-import net.minecraft.server.v1_7_R3.DistanceComparator;
-import net.minecraft.server.v1_7_R3.EntityCreature;
-import net.minecraft.server.v1_7_R3.EntityLiving;
-import net.minecraft.server.v1_7_R3.IEntitySelector;
-import net.minecraft.server.v1_7_R3.PathfinderGoalTarget;
+import net.minecraft.server.v1_7_R2.DistanceComparator;
+import net.minecraft.server.v1_7_R2.EntityCreature;
+import net.minecraft.server.v1_7_R2.EntityLiving;
+import net.minecraft.server.v1_7_R2.IEntitySelector;
+import net.minecraft.server.v1_7_R2.PathfinderGoalTarget;
 
 public class PathfinderGoalNearestAttackableGangster extends PathfinderGoalTarget  {
 

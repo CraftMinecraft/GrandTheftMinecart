@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import net.minecraft.server.v1_7_R3.EntityEnderDragon;
-import net.minecraft.server.v1_7_R3.PacketPlayOutEntityDestroy;
+import net.minecraft.server.v1_7_R2.EntityEnderDragon;
+import net.minecraft.server.v1_7_R2.PacketPlayOutEntityDestroy;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

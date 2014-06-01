@@ -5,21 +5,21 @@ import me.ToastHelmi.GrandTheftMinecart.GrandTheftMinecart;
 
 import me.ToastHelmi.GrandTheftMinecart.NMS.PathFinderGoals.PathfinderGoalNearestAttackableGangster;
 import me.ToastHelmi.GrandTheftMinecart.Settings.Settings;
-import net.minecraft.server.v1_7_R3.EntityHuman;
-import net.minecraft.server.v1_7_R3.EntityZombie;
-import net.minecraft.server.v1_7_R3.GenericAttributes;
-import net.minecraft.server.v1_7_R3.PathfinderGoalFloat;
-import net.minecraft.server.v1_7_R3.PathfinderGoalHurtByTarget;
-import net.minecraft.server.v1_7_R3.PathfinderGoalLookAtPlayer;
-import net.minecraft.server.v1_7_R3.PathfinderGoalMeleeAttack;
-import net.minecraft.server.v1_7_R3.PathfinderGoalMoveIndoors;
-import net.minecraft.server.v1_7_R3.PathfinderGoalOpenDoor;
-import net.minecraft.server.v1_7_R3.PathfinderGoalRandomLookaround;
-import net.minecraft.server.v1_7_R3.PathfinderGoalRandomStroll;
-import net.minecraft.server.v1_7_R3.PathfinderGoalSelector;
-import net.minecraft.server.v1_7_R3.World;
+import net.minecraft.server.v1_7_R2.EntityHuman;
+import net.minecraft.server.v1_7_R2.EntityZombie;
+import net.minecraft.server.v1_7_R2.GenericAttributes;
+import net.minecraft.server.v1_7_R2.PathfinderGoalFloat;
+import net.minecraft.server.v1_7_R2.PathfinderGoalHurtByTarget;
+import net.minecraft.server.v1_7_R2.PathfinderGoalLookAtPlayer;
+import net.minecraft.server.v1_7_R2.PathfinderGoalMeleeAttack;
+import net.minecraft.server.v1_7_R2.PathfinderGoalMoveIndoors;
+import net.minecraft.server.v1_7_R2.PathfinderGoalOpenDoor;
+import net.minecraft.server.v1_7_R2.PathfinderGoalRandomLookaround;
+import net.minecraft.server.v1_7_R2.PathfinderGoalRandomStroll;
+import net.minecraft.server.v1_7_R2.PathfinderGoalSelector;
+import net.minecraft.server.v1_7_R2.World;
 
-import org.bukkit.craftbukkit.v1_7_R3.util.UnsafeList;
+import org.bukkit.craftbukkit.v1_7_R2.util.UnsafeList;
 import org.bukkit.entity.Zombie;
 import org.bukkit.inventory.EntityEquipment;
 

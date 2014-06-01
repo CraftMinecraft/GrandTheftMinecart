@@ -5,7 +5,7 @@ import me.ToastHelmi.GrandTheftMinecart.Police.CrimeManager;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.StaticMetaDataValue;
 import me.ToastHelmi.GrandTheftMinecart.Util.MetaDataManager;
 
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R2.entity.CraftPlayer;
 import org.bukkit.entity.Horse;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
