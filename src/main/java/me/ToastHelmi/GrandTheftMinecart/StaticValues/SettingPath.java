@@ -8,6 +8,8 @@ public class SettingPath {
 	public final static String TIME_FOUR_STAR = "WantedLevel.Time.FourStars";
 	public final static String TIME_FIVE_STAR = "WantedLevel.Time.FiveStars";
 
+        public static final String MOB_NAME_VISIBLE = "MobNameVisible";
+        
 	public static final String OFFICER_HELMET = "Police.Officer.Equipment.Helmet";
 	public static final String OFFICER_CHESTPLATE = "Police.Officer.Equipment.Chestplate";
 	public static final String OFFICER_LEGGINGS = "Police.Officer.Equipment.Leggings";

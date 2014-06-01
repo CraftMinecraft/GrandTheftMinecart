@@ -41,6 +41,8 @@ WantedLevel:
       Officers: 0
       Snipers: 4
       Swats: 8
+# If set to true, mob name will be constantly visible.
+MobNameVisible: false
 Police:
   Officer:
     Equipment:

@@ -1,6 +1,7 @@
 package me.ToastHelmi.GrandTheftMinecart.NMS.Police;
 
 import java.lang.reflect.Field;
+import me.ToastHelmi.GrandTheftMinecart.GrandTheftMinecart;
 
 import me.ToastHelmi.GrandTheftMinecart.NMS.PathFinderGoals.PathfinderGoalNearestAttackableGangster;
 import me.ToastHelmi.GrandTheftMinecart.Settings.Settings;
@@ -39,7 +40,7 @@ public class PoliceOfficer extends EntityZombie{
 			cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
 			
 			this.setCustomName("Police Officer");
-			
+			this.setCustomNameVisible(Settings.isMobNameVisible());
 		} catch (Exception exc) {
 			exc.printStackTrace();
 			// This means that the name of one of the fields changed names or

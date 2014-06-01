@@ -39,7 +39,7 @@ public class Swat extends EntityPigZombie{
 			cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
 			
 			this.setCustomName("SWAT");
-			
+			this.setCustomNameVisible(Settings.isMobNameVisible());
 		} catch (Exception exc) {
 			exc.printStackTrace();
 			// This means that the name of one of the fields changed names or

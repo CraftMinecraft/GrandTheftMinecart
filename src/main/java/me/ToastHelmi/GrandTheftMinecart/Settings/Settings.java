@@ -17,6 +17,7 @@ public class Settings {
 	private static ItemStack[] SwatEquip = new ItemStack[5];
 	private static HashMap<Integer, HashMap<PoliceType, Integer>> policeSpawn = new HashMap<Integer, HashMap<PoliceType, Integer>>();
 	
+        private static boolean MobNameVisible = true;
 	private static boolean Info = true;
 	private static FileConfiguration c; 
 	public static void loadConfig(){
@@ -24,7 +25,8 @@ public class Settings {
 		 c = GrandTheftMinecart.getInstance().getConfig();
 		
 		Info = c.getBoolean(SettingPath.UPDATER_ENABELD, true);
-		
+		MobNameVisible = c.getBoolean(SettingPath.MOB_NAME_VISIBLE);
+                
 		OffiserEquip[0] = getItemStack(SettingPath.OFFICER_HELMET);
 		OffiserEquip[1] = getItemStack(SettingPath.OFFICER_CHESTPLATE);
 		OffiserEquip[2] = getItemStack(SettingPath.OFFICER_LEGGINGS);;
@@ -71,6 +73,9 @@ public class Settings {
 	public static boolean isUpdateInfoEnabeld(){
 		return Info;
 	}
+        public static boolean isMobNameVisible(){
+                return MobNameVisible;
+        }
 	private static ItemStack getItemStack(String path){
 		try{
 			return new ItemStack(Material.getMaterial(c.getString(path)));
