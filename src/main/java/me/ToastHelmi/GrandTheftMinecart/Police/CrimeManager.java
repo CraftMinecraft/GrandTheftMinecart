@@ -86,8 +86,12 @@ public class CrimeManager {
         }
         return total / playercount;
     }
-
+    
     public void setWantedLevel(Player p, int level) {
+        setWantedLevel(p, level, true);
+    }
+    
+    public void setWantedLevel(Player p, int level, boolean spawnPolice) {
         if (level < 0) {
             level = 0;
         }
@@ -105,7 +109,7 @@ public class CrimeManager {
                 MetaDataManager.setPlayerMetaData(p, StaticMetaDataValue.GESETZESVERSTOS, 0);
             }
         } else {
-            if (!cooldowns.containsKey(p.getUniqueId()) || level != getWantedLevel(p)) {
+            if (spawnPolice && !cooldowns.containsKey(p.getUniqueId()) || level != getWantedLevel(p)) {
                 SpawnPolice.spawnPolice(p, level);
             }
             cooldowns.put(p.getUniqueId(), new Cooldown(p, getCooldownlengthForLevel(level)));

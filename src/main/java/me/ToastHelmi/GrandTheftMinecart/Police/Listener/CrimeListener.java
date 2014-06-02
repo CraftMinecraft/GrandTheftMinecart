@@ -5,6 +5,7 @@ import me.ToastHelmi.GrandTheftMinecart.NMS.Police.PoliceOfficer;
 import me.ToastHelmi.GrandTheftMinecart.NMS.Police.Sniper;
 import me.ToastHelmi.GrandTheftMinecart.NMS.Police.Swat;
 import me.ToastHelmi.GrandTheftMinecart.Police.CrimeManager;
+import me.ToastHelmi.GrandTheftMinecart.Police.SpawnPolice;
 import me.ToastHelmi.GrandTheftMinecart.Settings.Settings;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.SettingPath;
 import me.ToastHelmi.GrandTheftMinecart.StaticValues.StaticMetaDataValue;
@@ -46,7 +47,8 @@ public class CrimeListener implements Listener {
 
             if (player.getHealth() <= damage) {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_KILL_PLAYER, 2));
-                CrimeManager.getInstance().setWantedLevel(damager, level);
+                CrimeManager.getInstance().setWantedLevel(damager, level, false);
+                SpawnPolice.spawnPolice(damager, victim.getLocation(), CrimeManager.getInstance().getWantedLevel(damager));
                 CrimeManager.getInstance().incrementInfringement(damager);
             } else {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_ATTACK_PLAYER, 1));
@@ -58,7 +60,8 @@ public class CrimeListener implements Listener {
 
             if (((Damageable) victim).getHealth() <= damage) {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_KILL_POLICE, 4));
-                CrimeManager.getInstance().setWantedLevel(damager, level);
+                CrimeManager.getInstance().setWantedLevel(damager, level, false);
+                SpawnPolice.spawnPolice(damager, victim.getLocation(), CrimeManager.getInstance().getWantedLevel(damager));
                 CrimeManager.getInstance().incrementInfringement(damager);
             } else {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_ATTACK_POLICE, 3));
@@ -67,7 +70,8 @@ public class CrimeListener implements Listener {
         } else {
             if (((Damageable) victim).getHealth() <= damage) {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_KILL_MOB, 0));
-                CrimeManager.getInstance().setWantedLevel(damager, level);
+                CrimeManager.getInstance().setWantedLevel(damager, level, false);
+                SpawnPolice.spawnPolice(damager, victim.getLocation(), CrimeManager.getInstance().getWantedLevel(damager));
                 CrimeManager.getInstance().incrementInfringement(damager);
             } else {
                 level = Math.max(level, config.getInt(SettingPath.CONDITION_ATTACK_MOB, 0));
